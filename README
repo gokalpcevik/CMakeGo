@@ -2,8 +2,6 @@ What is this?
 
 I got tired of copying my Windows batch scripts(calling into CMake) into my project root directories while using Vim/Neovim. There are already tools/plugins integrating Neovim with CMake but I wanted to build something of my own. Do not use this. Toolchain files are currently hardcoded for my system, although you can specify them by passing in arguments. If you do not want to use a toolchain file while invoking CMake, modify src/cmake.cpp. Code is very small and simple, just invokes CMake via CreateProcess.
 
-Although I've built project for my C/C++ projects using Vim/Neovim, this project(if you can call it that) has nothing to do with those. This simply invokes cmake in the working directory of the command line. 
-
 Usage:
 
 - Configure project by calling: CMakeGo <-cfg or  --configure> <build-directory> <--toolchain-file or -tch>=<path to toolchain file(with or without quotes depending on path)>
